@@ -16,9 +16,9 @@ const WorkStation = () => {
             value: ["lab external will be conducted in E-ClassRoom"],
           },
           {
-            by: "Sambasividu",
+            by: "Eswari",
             access: false,
-            value: ["bring the Labmanual", "Get the Observation", "Mentain Proper Dress code"],
+            value: ["Bring Laptop", "Get Docuementation Printout", "Mentain Proper Dress code"],
           },
         ],
       },
@@ -46,13 +46,13 @@ const WorkStation = () => {
                 status: "PENDING",
               },
               {
-                value: "send me photos ",
+                value: "NEOPAT EXAM ",
                 status: "CONFORMATION",
               },
             ],
           },
           {
-            by: "Honey Diana",
+            by: "Shaik Riyaz",
             access: false,
             context: [
               {
