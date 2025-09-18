@@ -16,25 +16,25 @@ const StudentTable = () => {
       const jsonData = {
         subjects: [
           {
-            name: "Scripting Languages",
+            name: "Cloud Computing",
             marks: { internal: 40, external: 30, lab: 60 },
           },
           {
-            name: "Machine Learning",
+            name: "BlockChain Technology",
             marks: { internal: 30, external: 30, lab: 60 },
           },
           {
-            name: "Big Data Analytics",
+            name: "Devops",
             marks: { internal: 30, external: 30, lab: 60 },
           },
         ],
         lab_subjects: [
           {
-            name: "BDA Lab",
+            name: "DSM LAB",
             marks: { lab: 20 },
           },
           {
-            name: "ML Lab",
+            name: "Mini Project",
             marks: { lab: 30 },
           },
         ],
@@ -42,17 +42,17 @@ const StudentTable = () => {
           {
             name: "Abhinav",
             marks: {
-              "Scipting Langiages": { internal: 25, external: 50, lab: 10 },
-              "Machine Learning": { internal: 20, external: 60, lab: 10 },
-              "Big Data Analytics": { internal: 30, external: 50, lab: 8 },
-              "BDA LAB": { lab: 10 },
-              "ML Lab": { lab: 10 },
+              "Cloud Computing": { internal: 25, external: 50, lab: 10 },
+              "BlockChain Technology": { internal: 20, external: 60, lab: 10 },
+              "Devops": { internal: 30, external: 50, lab: 8 },
+              "DSM LAB": { lab: 10 },
+              "MINI Project": { lab: 10 },
             },
           },
           {
             name: "Sathwik",
             marks: {
-              "Scipting Langiages": { internal: 18, external: 45, lab: 15 },
+              "Cloud Computing": { internal: 18, external: 45, lab: 15 },
               "Machine Learning": { internal: 22, external: 50, lab: 10 },
               "Big Data Analytics": { internal: 25, external: 45, lab: 10 },
               "BDA LAB": { lab: 15 },
@@ -62,7 +62,7 @@ const StudentTable = () => {
           {
             name: "Uday",
             marks: {
-              "Scipting Langiages": { internal: 28, external: 60, lab: 4 },
+              "Cloud Computing": { internal: 28, external: 60, lab: 4 },
               "Machine Learning": { internal: 25, external: 55, lab: 9 },
               "Big Data Analytics": { internal: 30, external: 60, lab: 5 },
               "BDA LAB": { lab: 4 },
@@ -72,7 +72,7 @@ const StudentTable = () => {
           {
             name: "Rahul",
             marks: {
-              "Scipting Langiages": { internal: 30, external: 28, lab: 45 },
+              "Cloud Computing": { internal: 30, external: 28, lab: 45 },
               "Machine Learning": { internal: 25, external: 27, lab: 50 },
               "Big Data Analytics": { internal: 28, external: 26, lab: 55 },
               "BDA LAB": { lab: 18 },
@@ -82,7 +82,7 @@ const StudentTable = () => {
           {
             name: "Priya",
             marks: {
-              "Scipting Langiages": { internal: 35, external: 29, lab: 52 },
+              "Cloud Computing": { internal: 35, external: 29, lab: 52 },
               "Machine Learning": { internal: 28, external: 28, lab: 54 },
               "Big Data Analytics": { internal: 27, external: 27, lab: 50 },
               "BDA LAB": { lab: 19 },
@@ -92,7 +92,7 @@ const StudentTable = () => {
           {
             name: "Amit",
             marks: {
-              "Scipting Langiages": { internal: 32, external: 25, lab: 48 },
+              "Cloud Computing": { internal: 32, external: 25, lab: 48 },
               "Machine Learning": { internal: 26, external: 26, lab: 52 },
               "Big Data Analytics": { internal: 29, external: 28, lab: 53 },
               "BDA LAB": { lab: 17 },
@@ -102,7 +102,7 @@ const StudentTable = () => {
           {
             name: "Sneha",
             marks: {
-              "Scipting Langiages": { internal: 38, external: 28, lab: 55 },
+              "Cloud Computing": { internal: 38, external: 28, lab: 55 },
               "Machine Learning": { internal: 29, external: 29, lab: 57 },
               "Big Data Analytics": { internal: 28, external: 28, lab: 56 },
               "BDA LAB": { lab: 18 },

@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <div className="w-64 bg-white border-r border-gray-200 h-screen flex-shrink-0">
       <div className="p-4 border-b border-gray-200">
-        <h1 className="text-xl font-bold text-blue-600">Nexus</h1>
+        <h1 className="text-xl font-bold text-blue-600">ScholarFlow</h1>
       </div>
       <nav className="mt-6">
         <ul>

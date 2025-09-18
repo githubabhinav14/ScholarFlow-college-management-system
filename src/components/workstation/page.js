@@ -12,7 +12,7 @@ export default function MyClassRoom() {
     { icon: User, label: "Teachers", value: "8", bgColor: "bg-green-50", iconColor: "text-green-600" },
     { icon: Clock, label: "Attendance", value: "95%", bgColor: "bg-purple-50", iconColor: "text-purple-600" },
     { icon: Calendar, label: "Events", value: "3 Upcoming", bgColor: "bg-amber-50", iconColor: "text-amber-600" },
-    { icon: MessageSquare, label: "Messages", value: "12 New", bgColor: "bg-red-50", iconColor: "text-red-600" },
+    { icon: MessageSquare, label: "Messages", value: "3 New", bgColor: "bg-red-50", iconColor: "text-red-600" },
   ]
 
   // Tabs data
@@ -43,19 +43,19 @@ export default function MyClassRoom() {
   // Message board data
   const messages = [
     {
-      title: "SL Program Task",
+      title: "Project Execution",
       author: "Mrs. Eswari (Class Teacher)",
       bgColor: "bg-yellow-50",
       borderColor: "border-yellow-100",
     },
     {
-      title: "BDA Assignment",
-      author: "Mr. Rahamat Basha (BDA Teacher)",
+      title: "Project Guide Signature",
+      author: "Mrs. Eswari (Class Teacher)",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-100",
     },
     {
-      title: "CCNA Certificates Printouts",
+      title: "Permission Group Inactive Today",
       author: "Eswari (Class Teacher)",
       bgColor: "bg-green-50",
       borderColor: "border-green-100",
@@ -64,14 +64,15 @@ export default function MyClassRoom() {
 
   // Teachers data
   const teachers = [
-    { name: "Ms.Eswari", subject: "Scripting Languages", email: "eswari@mrcet.ac.in" },
-    { name: "Mr.Rahamat Basha", subject: "Big Data Analytics", email: "basha@eswari@mrcet.ac.in" },
-    { name: "Ms.Honey Diana", subject: "Computer Networks", email: "honey@eswari@mrcet.ac.in" },
-    { name: "Mr.Sambasivudu", subject: "Machine Learning", email: "sambasivudu@eswari@mrcet.ac.in" },
-    { name: "Ms.Shailaja", subject: "AIML Lab Incharge", email: "shailaja@eswari@mrcet.ac.in" },
+    { name: "Ms.Bhagya Lakshmi", subject: "Devops", email: "bhagya@mrcet.ac.in" },
+    { name: "Mr.Shaik Riyaz", subject: "Data Science & Models", email: "shaikriyaz@eswari@mrcet.ac.in" },
+    { name: "Mr.B.Ganesh", subject: "Cloud Computing", email: "ganesh@eswari@mrcet.ac.in" },
+    { name: "Ms.Archana", subject: "Naural Language Processing", email: "archana@eswari@mrcet.ac.in" },
+    { name: "Ms.C.S.N.Durgha", subject: "Blockchain Technology", email: "durga@eswari@mrcet.ac.in" },
     { name: "Mr.Archana", subject: "Computer Science", email: "archana@eswari@mrcet.ac.in" },
-    { name: "Mr.Rajesh", subject: "BDA Lab Incharge", email: "rajesh@eswari@mrcet.ac.in" },
-    { name: "Mr.Venu Gopal", subject: "PDS", email: "venugopal@eswari@mrcet.ac.in" },
+    { name: "Mr.Shaik Riyaz", subject: "Data Science Lab", email: "shaikriyaz@mrcet.ac.in" },
+    { name: "Ms.D.Akhila", subject: "Data Science Lab", email: "akhila@eswari@mrcet.ac.in" },
+    { name: "Ms.D.Sai Eswari", subject: "CLass Incharge", email: "eswari@eswari@mrcet.ac.in" },
   ]
 
   // Students data
@@ -92,19 +93,19 @@ export default function MyClassRoom() {
   const timetable = [
     {
       time: "9:20 - 10:20",
-      mon: "BDA",
-      tue: "CN",
-      wed: "SL",
-      thu: "AIML LAB",
-      fri: "IOT",
+      mon: "CC",
+      tue: "DS LAB",
+      wed: "CC",
+      thu: "NLP",
+      fri: "DEVOPS",
     },
     {
       time: "10:20 - 11:20",
-      mon: "IOT",
-      tue: "ML",
-      wed: "BDA",
-      thu: "AIML LAB",
-      fri: "SL",
+      mon: "BCT",
+      tue: "DS LAB",
+      wed: "DSM",
+      thu: "BCT",
+      fri: "CC",
     },
     {
       time: "11:20 - 11:30",
@@ -116,11 +117,11 @@ export default function MyClassRoom() {
     },
     {
       time: "11:30 - 12:30",
-      mon: "ML",
-      tue: "IOT",
-      wed: "IOT",
-      thu: "SL",
-      fri: "BDA",
+      mon: "DSM",
+      tue: "DEVOPS",
+      wed: "DEVOPS",
+      thu: "CC",
+      fri: "BCT",
     },
     {
       time: "12:30 - 1:30",
@@ -132,35 +133,35 @@ export default function MyClassRoom() {
     },
     {
       time: "1:30 - 2:30",
-      mon: "PDS II",
-      tue: "SL",
+      mon: "NLP",
+      tue: "BCT",
       wed: "APP DEV II",
-      thu: "BDA",
-      fri: "BDA LAB",
+      thu: "NLP",
+      fri: "DSM",
     },
     {
       time: "2:30 - 3:30",
       mon: "PDS II",
       tue: "TUTORIAL",
       wed: "APP DEV II",
-      thu: "CN",
-      fri: "SL",
+      thu: "CC",
+      fri: "DEVOPS",
     },
   ]
 
   // Calendar events data
   const events = [
     {
-      title: "Lab-Internals",
-      date: "April 07, 2025",
-      description: "All students Should Attend",
+      title: "Dussehra Holidays",
+      date: "September 29 - October 5, 2025",
+      description: "All students Should Attend after Holidays",
       bgColor: "bg-blue-100",
       textColor: "text-blue-600",
       icon: Calendar,
     },
     {
-      title: "Mid-Term Exams",
-      date: "April 15-18, 2025",
+      title: "Mid-II Exams",
+      date: "October 9-11, 2025",
       description: "Syllabus available in the study materials section",
       bgColor: "bg-red-100",
       textColor: "text-red-600",
@@ -168,7 +169,7 @@ export default function MyClassRoom() {
     },
     {
       title: "Semester Exams",
-      date: "April 25, 2025",
+      date: "August 23, 2025",
       description: "Syllabus available in the study materials section",
       bgColor: "bg-green-100",
       textColor: "text-green-600",
@@ -181,24 +182,24 @@ export default function MyClassRoom() {
     {
       day: "10",
       title: "National Holiday",
-      date: "March 10, 2025",
+      date: "October 10, 2025",
     },
     {
       day: "27",
       title: "Founder's Day",
-      date: "March 27, 2025",
+      date: "November 27, 2025",
     },
     {
       day: "15",
-      title: "Spring Break",
-      date: "April 15-22, 2025",
+      title: "Chirmas",
+      date: "December 25, 2025",
     },
   ]
 
   return (
     <div className="space-y-6">
       <div className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Class III CSE C</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">Class IV C</h2>
         <div className="flex flex-wrap gap-4">
           {classStats.map((stat, index) => (
             <div key={index} className={`flex items-center ${stat.bgColor} rounded-lg p-3`}>

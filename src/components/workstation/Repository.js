@@ -6,26 +6,26 @@ import { format, subDays } from "date-fns"
 const MOCK_FILES = [
   {
     id: 1,
-    name: "Scripting Languages.pdf",
+    name: "BlockChain Technology.pdf",
     type: "pdf",
     size: "2.4 MB",
-    uploadedBy: "Prof. Eswari",
+    uploadedBy: "Prof. Durga",
     uploadDate: subDays(new Date(), 2),
     category: "Notes",
-    subject: "SL",
+    subject: "BCT",
     downloads: 100,
     thumbnail: null,
     url: "https://aws-bucket-url.com/files/data-structures-notes.pdf",
   },
   {
     id: 2,
-    name: "Big Data Analytics.docx",
+    name: "Cloud Computing.docx",
     type: "docx",
     size: "1.1 MB",
-    uploadedBy: "Prof. Rahamat Basha",
+    uploadedBy: "Prof. Ravi",
     uploadDate: subDays(new Date(), 5),
     category: "Study Material",
-    subject: "BDA",
+    subject: "CC",
     downloads: 20,
     thumbnail: null,
     url: "https://aws-bucket-url.com/files/calculus-formula-sheet.docx",
@@ -38,34 +38,34 @@ const MOCK_FILES = [
     uploadedBy: "Prof. Eswari",
     uploadDate: subDays(new Date(), 7),
     category: "Templates",
-    subject: "Genral",
+    subject: "General",
     downloads: 32,
     thumbnail: null,
     url: "https://aws-bucket-url.com/files/physics-lab-report-template.xlsx",
   },
   {
     id: 4,
-    name: "Semister Project.pdf",
+    name: "Data Science Models.pdf",
     type: "pdf",
     size: "3.2 MB",
-    uploadedBy: "Prof. Eswari",
+    uploadedBy: "Prof. Shaik Riyaz",
     uploadDate: subDays(new Date(), 1),
     category: "Guidelines",
-    subject: "General",
+    subject: "Data Science",
     downloads: 120,
     thumbnail: null,
     url: "https://aws-bucket-url.com/files/semester-project-guidelines.pdf",
   },
   {
     id: 5,
-    name: "UML Diagrams.png",
-    type: "png",
+    name: "Weekly meet-Project.pdf",
+    type: "pdf",
     size: "4.5 MB",
-    uploadedBy: "Faculty",
+    uploadedBy: "MS.D.Sai Eswari",
     uploadDate: subDays(new Date(), 3),
-    category: "Diagrams",
-    subject: "Computer Science",
-    downloads: 25,
+    category: "Project",
+    subject: "Mini Project",
+    downloads: 47,
     thumbnail: "/placeholder.svg?height=100&width=100",
     url: "https://aws-bucket-url.com/files/circuit-diagrams.png",
   },
@@ -84,26 +84,26 @@ const MOCK_FILES = [
   },
   {
     id: 7,
-    name: "BDA LAB.pdf",
+    name: "DSM LAB.pdf",
     type: "pdf",
     size: "1.9 MB",
-    uploadedBy: "Prof. Rahamat Basha",
+    uploadedBy: "Prof. Shaik Riyaz",
     uploadDate: subDays(new Date(), 10),
     category: "Examples",
-    subject: "BDA",
+    subject: "DMS",
     downloads: 19,
     thumbnail: null,
     url: "https://aws-bucket-url.com/files/research-paper-example.pdf",
   },
   {
     id: 8,
-    name: "ML Lab.pdf",
+    name: "NLP.pdf",
     type: "pdf",
     size: "1.5 MB",
-    uploadedBy: "Prof. Samba",
+    uploadedBy: "Prof. Archana",
     uploadDate: subDays(new Date(), 15),
     category: "Guidelines",
-    subject: "ML",
+    subject: "NLP",
     downloads: 112,
     thumbnail: null,
     url: "https://aws-bucket-url.com/files/chemistry-lab-safety-rules.pdf",
@@ -125,13 +125,14 @@ const CATEGORIES = [
 // Subjects for filtering
 const SUBJECTS = [
   "All Subjects",
-  "Scripting Languages",
-  "Big Data Analytics",
-  "Machine Learning",
-  "Computer Network",
-  "BDA LAB",
-  "ML LAB",
-  "Semister project",
+  "BCT",
+  "CC",
+  "General",
+  "Data Science",
+  "Mini Project",
+  "Computer Science",
+  "DMS",
+  "NLP",
 ]
 
 // File types for filtering
@@ -302,10 +303,7 @@ const RepositoryLayout = () => {
             </div>
 
             {/* filter options */}
-
-            {/* if showFilters is set then display the sections */}
             {showFilters && (
-
               <div className="mt-4 pt-4 border-t border-gray-100 grid grid-cols-1 md:grid-cols-4 gap-4">
                 
                 {/* categories */}
@@ -370,7 +368,6 @@ const RepositoryLayout = () => {
                     <option value="downloads">Most Downloads</option>
                   </select>
                 </div>
-
               </div>
             )}
           </div>
@@ -378,8 +375,6 @@ const RepositoryLayout = () => {
 
         {/* Files Display section*/}
         {files.length === 0 ? (
-
-          //if no files are present then display this section
           <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-8 text-center">
             <div className="flex flex-col items-center justify-center">
               <FileText className="h-16 w-16 text-gray-300 mb-4" />
@@ -402,10 +397,7 @@ const RepositoryLayout = () => {
             </div>
           </div>
         ): 
-        //else display this section 
         viewMode === "grid" ? (
-
-          //viewMode is grid then display like this
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {files.map((file) => (
               <div
@@ -468,8 +460,6 @@ const RepositoryLayout = () => {
             ))}
           </div>
         ) : (
-
-          //else display like this
           <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
@@ -572,4 +562,3 @@ const RepositoryLayout = () => {
 }
 
 export default RepositoryLayout
-
